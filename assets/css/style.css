@@ -91,7 +91,6 @@ footer {
     background-color:#666666;
     border-top: solid 7px #4aaaa4;
     color: #f1f0f0;
-    padding-bottom: 5px;
 }
 
 input[type=text] {
@@ -191,4 +190,34 @@ input[type=submit] {
     content: "";
     clear: both;
     display: table;
+}
+
+a:link {
+    color: #777777;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #777777;
+}
+
+a:hover {
+    color: #FFFFE0;
+}
+
+.background-switch {
+    padding: 5px;
+}
+
+.background-switch:hover {
+    background-color: #FF69B4;
+}
+
+.submit {
+    font-size: 16px;
+}
+
+.box:hover {
+    outline: 5px solid #FF69B4;
+    outline-offset: 10px;
 }
