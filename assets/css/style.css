@@ -1,13 +1,28 @@
-body {
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+
+  .wrapper {
+    min-height: 100%;
+    margin: 0 auto;
+    background-image: url("../images/seigaiha.png");
+  
+    /* Equal to height of footer */
+    /* But also accounting for potential margin-bottom of last child */
+    margin-bottom: -60px;
+  }
+
+  .footer,
+  .push {
+    height: 60px;
+  }
+  
+  body {
     margin: 0;
     padding: 0;
     color: #777777;
     font-family: Arial, Helvetica, sans-serif;
-}
-
-.container {
-    margin: 0 auto;
-    background-image: url("../images/seigaiha.png");
 }
 
 header {
@@ -38,7 +53,8 @@ nav {
 
 nav ul li {
     display: inline-block;
-    padding: 30px 5px 0 5px;
+    padding: 25px 5px 0 5px;
+    font-size: 18px;
 }
 
 .page-title {
@@ -52,18 +68,17 @@ nav ul li {
 .center-box {
     border: solid 1px #dddddd;
     width: 960px;
-    height: 500px;
     background-color: #ffffff;
     margin: 40px auto 80px;
-    padding: 25px;
-    font-size: 16px;
+    padding: 30px;
+    font-size: 18px;
     line-height: 2;
 }
 
 img {
-    width: 250px;
+    width: 270px;
     float: left;
-    padding: 10px 15px 15px 0;
+    padding: 10px 20px 20px 0;
 }
 
 .copyright {
@@ -74,9 +89,9 @@ img {
 
 footer {
     background-color:#666666;
-    border-top: solid 5px #4aaaa4;
-    height: 50px;
+    border-top: solid 7px #4aaaa4;
     color: #f1f0f0;
+    padding-bottom: 5px;
 }
 
 input[type=text] {
@@ -100,7 +115,6 @@ input[type=submit] {
 .form {
     border: solid 1px #dddddd;
     width: 960px;
-    height: 550px;
     background-color: #ffffff;
     margin: 40px auto 80px;
     padding: 25px;
@@ -121,8 +135,10 @@ input[type=submit] {
     background-color: #4aaaa5;
     width: 290px;
     height: 40px;
-    padding: 5px;
+    padding: 15px 5px 0px 5px;
+    /* padding: 5px; */
     text-align: center;
+    font-size: 18px;
     position: relative;
     top: 160px;
 }
@@ -162,9 +178,13 @@ input[type=submit] {
     height: 900px;
     background-color: #ffffff;
     border: solid 1px #dddddd;
-    margin: 40px auto 80px;
+    margin: 40px auto;
     padding: 25px;
     line-height: 1.5;
+}
+
+.fade {
+    color: #dddddd;
 }
 
 .clearfix::after {
